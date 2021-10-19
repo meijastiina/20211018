@@ -15,10 +15,12 @@ let apple = {
     color: 'red'
 }
 
-fruits
+fruits.push(banana);
+fruits.push(watermelon);
+fruits.push(apple);
 
 for(let i = 0; i < fruits.length; i++) {
-    document.write(fruits[i]);
+    document.write("<li>" + fruits[i].name + " is " + fruits[i].color + "</li>");
 }
 
 document.write("<h2>ForEach</h2>");
@@ -26,5 +28,5 @@ document.write("<h2>ForEach</h2>");
 
 
 fruits.forEach(fruit => {
-    document.write(fruit);
+    document.write("<li>" + fruit.name + " is " + fruit.color + "</li>");
 });
